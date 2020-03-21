@@ -1,23 +1,26 @@
 /* from https://www.w3schools.com/w3css/4/w3.css and https://www.w3schools.com/cssref/css_websafe_fonts.asp */
 /* note: fullscreen tab on my macbook air: 10px = 3mm */
-html, body {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:15px;
-  line-height:1.5;
-  margin:0px;
-  padding:0px;
-  }
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+}
 
 * {
-  margin-left: 30px
+  margin-left: 30px;
 }
 
 h1 {
   background-color: grey;
   color: white;
   width: 100%;
-  margin-left: 0px;
+  margin: 0px;
   padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 a {
@@ -32,4 +35,58 @@ a {
   margin-left: 30px;
   text-decoration: none;
   text-align: center;
+}
+
+table {
+  margin: 30px;
+  border-color: black;
+}
+
+h2 *,
+form * {
+  margin: 0px;
+}
+
+/* table -- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables */
+
+/* spacing */
+
+table {
+  table-layout: fixed;
+  width: 95%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+  width: 10%;
+}
+
+thead th:nth-child(2) {
+  width: 10%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4) {
+  width: 20%;
+}
+
+thead th:nth-child(5) {
+  width: 20%;
+}
+
+thead th:nth-child(6) {
+  width: 10%;
+}
+
+thead th:nth-child(7) {
+  width: 10%;
+}
+
+th,
+td {
+  padding: 20px;
 }
