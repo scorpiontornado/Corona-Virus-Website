@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title> {% block title %} {{ heading }} - Corona Virus Website {% endblock %} </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    {% block content %}
+      {% if current != "/" %}
+        <a href = "{{ last }}" class = "back">Back</a>
+      {% endif %}
+      
+      <h1>{{ heading }}</h1>
+    {% endblock %}
+  </body>
+</html>

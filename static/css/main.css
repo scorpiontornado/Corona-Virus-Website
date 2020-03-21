@@ -1,0 +1,35 @@
+/* from https://www.w3schools.com/w3css/4/w3.css and https://www.w3schools.com/cssref/css_websafe_fonts.asp */
+/* note: fullscreen tab on my macbook air: 10px = 3mm */
+html, body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  margin:0px;
+  padding:0px;
+  }
+
+* {
+  margin-left: 30px
+}
+
+h1 {
+  background-color: grey;
+  color: white;
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 30px;
+}
+
+a {
+  color: darkcyan;
+}
+
+.back {
+  background-color: darkcyan;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+  margin-left: 30px;
+  text-decoration: none;
+  text-align: center;
+}

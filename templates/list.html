@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+  {{ super() }}
+  <table border = 1>
+      <thead>
+        <td>First Name</td>
+        <td>Surname</td>
+        <td>Age</td>
+        <td>Country of Birth</td>
+        <td>Country of Infection</td>
+        <td>Status</td>
+        <td>Quarantined</td>
+      </thead>
+      
+      {% for row in rows %}
+        <tr>
+            <td>{{row["first_name"]}}</td>
+            <td>{{row["surname"]}}</td>
+            <td>{{row["age"]}}</td>
+            <td>{{row["cob"]}}</td>
+            <td>{{row["coi"]}}</td>
+            <td>{{row["status"]}}</td>
+            <td>{{"No" if row["quarantined"] == false else "Yes"}}</td>	
+        </tr>
+      {% endfor %}
+  </table>
+  
+  <a href = "/">Go back to home page</a>
+{% endblock %}

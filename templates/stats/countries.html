@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {{ super() }}
+  <table border = 1>
+      <thead>
+        <td>Country</td>
+        <td>Number of infected</td>
+      </thead>
+      
+      {% for row in rows %}
+        <tr>
+            <td>{{row["coi"]}}</td>
+            <td>{{row["count(coi)"]}}</td>
+        </tr>
+      {% endfor %}
+  </table>
+  <a href = "/">Go back to home page</a>
+{% endblock %}
