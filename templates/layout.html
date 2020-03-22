@@ -10,11 +10,14 @@
     />
   </head>
   <body>
-    {% block content %} {% if current != "/" %}
-    <a href="{{ last }}" class="back">Back</a>
-    {% endif %}
+    {% block content %}
+    <div id="h">
+      <h1>{{ heading }}</h1>
 
-    <h1>{{ heading }}</h1>
+      {% if current != "/" %}
+      <a href="{{ last }}" class="back">Back</a>
+      {% endif %}
+    </div>
     {% endblock %}
   </body>
 </html>

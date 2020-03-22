@@ -43,6 +43,7 @@ setup(
     author='Nicholas Langford',
     packages=find_packages(),
     include_package_data=True,
+    scripts=["main.py"],
     url='https://github.com/scorpiontornado/Corona-Virus-Website',
     description='A website for looking at corona virus data',
     long_description=long_description,
