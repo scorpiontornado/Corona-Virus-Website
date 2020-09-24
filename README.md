@@ -31,6 +31,11 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 ```
 
+## Cloning the repo
+Follow [this guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+TL;DR: navigate to the folder you want to install it into, then run: ```git clone https://github.com/scorpiontornado/Corona-Virus-Website.git``` (note - it will create a project folder for you)
+
 ## How to use:
 
 See below for detailed steps
