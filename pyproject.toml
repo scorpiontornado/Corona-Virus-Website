@@ -9,6 +9,6 @@ description = ""
 name = "corona-virus-website"
 version = "0.1.0"
 [tool.poetry.dependencies]
-flask = "^1.1"
+flask = "^2.2"
 python = "^3.7"
 [tool.poetry.dev-dependencies]
